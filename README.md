@@ -1,11 +1,11 @@
 # Raspberry Pi Facial Recognition
 
-A small Python computer-vision project developed for a Raspberry Pi. The program reads frames from a Raspberry Pi camera, detects faces, compares facial encodings against a previously prepared dataset, and displays the matched name.
+A small Python project run on a Raspberry Pi. The program reads frames from a Raspberry Pi camera, detects faces, compares facial encodings against a previously prepared dataset, and displays the matched name.
 
 ## Technologies
 
 - Raspberry Pi
-- Raspberry Pi camera (the code uses `imutils.video.VideoStream` with `usePiCamera=True`)
+- Raspberry Pi camera
 - Python
 - OpenCV (`cv2`)
 - `face_recognition`
@@ -47,13 +47,4 @@ Place a valid `encodings.pickle` file beside `facial_recognition.py`, then run:
 python facial_recognition.py
 ```
 
-## Important notes
 
-- This repository does not include the trained face dataset or `encodings.pickle`.
-- The code has been formatted and lightly cleaned up, but it has **not been verified on the author's current camera setup**.
-- Only use face images with the subjects' informed permission. Do not publish face images, face encodings, or other identifying biometric data in this repository.
-- Facial recognition can make mistakes. Do not use this demo to make consequential decisions about people.
-
-## Project status
-
-Personal learning project / prototype. Camera compatibility and runtime behavior depend on the Raspberry Pi hardware, operating system, camera stack, and Python dependencies.
