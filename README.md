@@ -31,16 +31,9 @@ A small Python project run on a Raspberry Pi. The program reads frames from a Ra
 
 This project depends on compatible versions of Python, OpenCV, `face_recognition`, `imutils`, and the Raspberry Pi camera software.
 
-The camera initialization in this code uses the `PiCamera` interface through `imutils` (`usePiCamera=True`). This is associated with the legacy Raspberry Pi camera stack. It may not work unchanged with newer Raspberry Pi OS camera configurations. Confirm that your OS, camera stack, and installed libraries support this interface before running the program.
+The camera initialization in this code uses the `PiCamera` interface through `imutils` (`usePiCamera=True`). It may not work unchanged with newer Raspberry Pi OS camera configurations.
 
 Install the Python packages in an environment compatible with your Raspberry Pi:
-
-```bash
-python -m pip install imutils opencv-python face_recognition
-```
-
-You may need additional system packages or a compatible installation method for `dlib` / `face_recognition` on your Raspberry Pi. The command above is not a guarantee that every dependency will install successfully on every Pi OS version.
-
 Place a valid `encodings.pickle` file beside `facial_recognition.py`, then run:
 
 ```bash
